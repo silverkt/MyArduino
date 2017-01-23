@@ -17,5 +17,4 @@ export class DashboardComponent implements OnInit {
             heroes=>this.heroes = heroes.slice(1, 5)
         );
     }
-
 }
