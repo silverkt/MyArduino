@@ -26,7 +26,9 @@ export class HeroesComponent implements OnInit {
   constructor(private heroService: HeroService, private router: Router) { }
   getHeroes(): void {
     //this.heroes = this.heroService.getHeroes();
-    this.heroService.getHeroesSlowly().then((heroes: Hero[]) => this.heroes = heroes);
+    this.heroService.gethttpHeroes().then((heroes: Hero[]) => this.heroes = heroes);
+   
+    
   }
   ngOnInit(){
     this.getHeroes();
