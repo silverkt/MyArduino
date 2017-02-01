@@ -12,6 +12,8 @@ import { HeroService } from './hero.service';
 
 import { AppRoutingModule } from './app-routing.module';
 
+import {  MapComponent } from './test.component';
+
 
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
@@ -22,7 +24,7 @@ import { InMemoryDataService }  from './in-memory-data.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpModule, InMemoryWebApiModule.forRoot(InMemoryDataService) ],
-  declarations: [ AppComponent, HeroDetailComponent, HeroesComponent, DashboardComponent ],
+  declarations: [ AppComponent, HeroDetailComponent, HeroesComponent, DashboardComponent, MapComponent ],
   bootstrap:    [ AppComponent ],
   providers: [HeroService],  
 })
