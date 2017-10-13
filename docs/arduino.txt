@@ -1,0 +1,17 @@
+arduino上标有ICSP的六个针脚是做什么用的
+
+In-Circuit Serial Programming，这个可以查看arduino的原理图，六根线直接和MCU连着的，对应VCC，MISO，MOSI，SCK，GND和RESET，其实是烧写器利用串行接口给单片机烧写程序用的，因为arduino上面配了16U2等USB控制器，所以是通过USB口利用串口通信写程序，ICSP就很少用到
+
+--------------------------------------
+RX/TX/GND是什么
+
+TX 的意思原始来于Transmit一词，意思为发送，发射
+RX 的意思原始来源于Receive一词 意思为接收，收到
+TX: transmit 传送 
+RX: receive 接收 
+在INTTERFACE中 
+查看WAN网卡的流量时 RX 为下行流量 TX为上行流量 
+查看LAN网卡的流量时 RX为上行流量 TX为下行流量
+
+GND代表的就是接地或地线。
+---------------------------------------
